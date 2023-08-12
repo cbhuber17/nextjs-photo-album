@@ -15,7 +15,7 @@ export default function UploadButton() {
           // Wait for a bit to refresh to prevent the race condition of the query happening before the image upload result
           setTimeout(() => {
             router.refresh();
-          }, 1000);
+          }, 1500);
         }}
         uploadPreset="unlssvf6"
       >

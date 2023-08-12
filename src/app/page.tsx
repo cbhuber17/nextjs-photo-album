@@ -25,11 +25,11 @@ export default function Home() {
 
       {imageId && (
         <CldImage
-          width="400"
+          width="500"
           height="300"
           src={imageId}
           sizes="100vw"
-          alt="Young girl ballet dancing"
+          alt="TBD"
         />
       )}
     </main>

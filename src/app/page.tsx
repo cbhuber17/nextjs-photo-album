@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { CldUploadButton, CldImage } from "next-cloudinary";
 import { useState } from "react";
 
@@ -18,7 +17,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <CldUploadButton
-        onUpload={(result: UploadResult) => setImageId(result.info.public_id)}
+        onUpload={(result: UploadResult) => {
+          setImageId(result.info.public_id);
+        }}
         uploadPreset="unlssvf6"
       />
 

@@ -1,7 +1,5 @@
 "use client";
 
-"use client";
-
 import { CldUploadButton } from "next-cloudinary";
 import { UploadResult } from "../page";
 import { Button } from "@/components/ui/button";
@@ -12,9 +10,7 @@ export default function UploadButton() {
   return (
     <Button asChild>
       <CldUploadButton
-        className=""
         onUpload={(result: UploadResult) => {
-          // setImageId(result.in-fo.public_id)
           // Refresh the page after uploading a new image
           // Wait for a bit to refresh to prevent the race condition of the query happening before the image upload result
           setTimeout(() => {
@@ -23,12 +19,12 @@ export default function UploadButton() {
         }}
         uploadPreset="unlssvf6"
       >
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth="1.5"
+            strokeWidth={1.5}
             stroke="currentColor"
             className="w-6 h-6"
           >

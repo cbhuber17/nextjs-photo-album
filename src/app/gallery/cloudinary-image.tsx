@@ -25,7 +25,7 @@ export function CloudinaryImage(
         <FullHeart
           onClick={() => {
             startTransition(() => {
-              setAsFavoriteAction(imageData.public_id, false, props.path);
+              setAsFavoriteAction(imageData.public_id, false);
             });
           }}
           className="absolute top-2 right-2 hover:text-white text-red-500 cursor-pointer"
@@ -34,7 +34,7 @@ export function CloudinaryImage(
         <Heart
           onClick={() => {
             startTransition(() => {
-              setAsFavoriteAction(imageData.public_id, true, props.path);
+              setAsFavoriteAction(imageData.public_id, true);
             });
           }}
           className="absolute top-2 right-2 hover:text-red-500 cursor-pointer"

@@ -83,30 +83,39 @@ export default function EditPage({
           )}
 
           {transformation === "blur" && (
+            // @ts-ignore
             <CldImage
               src={publicId}
               width="1200"
               height="1400"
+              /*
+              //@ts-ignore */
               blur="800"
               alt="some image"
             />
           )}
 
           {transformation === "grayscale" && (
+            // @ts-ignore
             <CldImage
               src={publicId}
               width="1200"
               height="1400"
+              /*
+              //@ts-ignore */
               grayscale
               alt="some image"
             />
           )}
 
           {transformation === "pixelate" && (
+            // @ts-ignore
             <CldImage
               src={publicId}
               width="1200"
               height="1400"
+              /*
+              //@ts-ignore */
               pixelate
               alt="some image"
             />

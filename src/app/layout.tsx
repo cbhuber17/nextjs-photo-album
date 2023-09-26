@@ -157,7 +157,7 @@ export default function RootLayout({
               height="50"
               alt="icon of this photo album app"
             />
-            Colin Huber Photos
+            <Link href="/">Colin Huber Photos</Link>
             <div className="ml-auto flex items-center space-x-4">
               <Avatar>
                 <AvatarImage

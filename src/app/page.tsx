@@ -24,26 +24,26 @@ export default function Home() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></g>
           <g id="SVGRepo_iconCarrier">
             <path
               d="m8 8 4-4 4 4"
               stroke="#FFFFFF"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></path>
             <path
               d="M12 4v12M19 17v.6c0 1.33-1.07 2.4-2.4 2.4H7.4C6.07 20 5 18.93 5 17.6V17"
               stroke="#FFFFFF"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
+              strokeLinecap="round"
             ></path>
           </g>
         </svg>

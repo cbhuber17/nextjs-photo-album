@@ -22,7 +22,7 @@ async function SideMenu() {
   };
 
   return (
-    <div className="bg-slate-950 pb-12 w-1/5">
+    <div className="bg-slate-950 pb-12 md:w-1/5">
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
           <h2 className="text-center mb-2 px-4 text-lg font-semibold tracking-tight">
@@ -32,7 +32,7 @@ async function SideMenu() {
             <Button
               asChild
               variant="ghost"
-              className="w-full justify-start flex gap-2"
+              className="w-full justify-center flex gap-2 md:justify-start"
             >
               <Link href="/gallery">
                 <svg
@@ -55,7 +55,7 @@ async function SideMenu() {
             <Button
               asChild
               variant="ghost"
-              className="w-full justify-start flex gap-2"
+              className="w-full justify-center flex gap-2 md:justify-start"
             >
               <Link href="/albums">
                 <svg
@@ -80,7 +80,7 @@ async function SideMenu() {
                 variant="ghost"
                 asChild
                 key={folder.name}
-                className="w-full justify-start flex gap-2"
+                className="w-full justify-center flex gap-2 md:justify-start"
               >
                 <Link className="pl-8" href={`/albums/${folder.path}`}>
                   {folder.name}
@@ -127,7 +127,7 @@ async function SideMenu() {
             <Button
               asChild
               variant="ghost"
-              className="w-full justify-start flex gap-2"
+              className="w-full justify-center flex gap-2 md:justify-start"
             >
               <Link href="/favorites">
                 <Heart />
@@ -170,7 +170,7 @@ export default function RootLayout({
           </div>
         </div>
 
-        <div className="flex">
+        <div className="lg:flex md:grid md:grid-rows-2">
           <SideMenu />
 
           <div className="w-full px-4 pt-8">{children}</div>
